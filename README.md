@@ -1,13 +1,15 @@
 InningsInsight : Cricket Score Forecasting
+
 This project predicts the final T20I innings score of India’s national team in real time using a hybrid BiLSTM–Transformer model. It leverages enriched ball-by-ball data, advanced feature engineering, and a custom-designed loss function to produce highly accurate, interpretable forecasts-significantly outperforming ESPN’s over-wise predictions.
 
-📌Objective To build a machine learning pipeline that forecasts the final score of India’s innings in T20I matches using ball-level context, temporal features, and domain knowledge.
+📌Objective : To build a machine learning pipeline that forecasts the final score of India’s innings in T20I matches using ball-level context, temporal features, and domain knowledge.
 
-🧠 Approach 📊 Data Collection & Enrichment:
+🧠 Approach: Data Collection & Enrichment:
 
 Retrieved all T20 Internationals played by India from 2006 to 2024 via CricSheet.
 Used BeautifulSoup and Selenium to augment with: Venue country, toss outcome, match time (day/night), and player identifiers.
 Mapped stadiums to their countries to infer home/away status.
+
 🧹 Preprocessing & Feature Engineering
 
 Standardized ball notations, dates, and resolved duplicates/missing values.
